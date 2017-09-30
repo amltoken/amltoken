@@ -26,6 +26,12 @@
   version = "v1.0.0"
 
 [[projects]]
+  name = "github.com/skycoin/skycoin"
+  packages = ["src/api/cli","src/api/webrpc","src/cipher","src/cipher/base58","src/cipher/chacha20","src/cipher/encoder","src/cipher/go-bip39","src/cipher/ripemd160","src/cipher/secp256k1-go","src/cipher/secp256k1-go/secp256k1-go2","src/coin","src/consensus","src/daemon","src/daemon/gnet","src/daemon/pex","src/gui","src/util/browser","src/util/cert","src/util/file","src/util/http","src/util/logging","src/util/utc","src/visor","src/visor/blockdb","src/visor/bucket","src/visor/historydb","src/wallet"]
+  revision = "ee33f18f2eed78515bce3b1c412d0e67b0570c24"
+  version = "0.19.1"
+
+[[projects]]
   branch = "master"
   name = "github.com/stretchr/objx"
   packages = ["."]
@@ -70,6 +76,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "fe04266049e4a510d18884a25ff48676c7852487d18bc8bb81b0776bfd264259"
+  inputs-digest = "49d4eee7e5eba4897c16dd857fc7b9adeef5826324e7002ff44530124185d01b"
   solver-name = "gps-cdcl"
   solver-version = 1

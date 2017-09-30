@@ -52,3 +52,7 @@
 [[constraint]]
   name = "github.com/urfave/cli"
   version = "1.19.1"
+
+[[override]]
+  name = "github.com/skycoin/skycoin"
+  branch = "master"
