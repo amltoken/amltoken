@@ -1,51 +1,59 @@
 {
-    "name": "skycoin",
-    "productName": "Skycoin",
-    "author": "skycoin",
+    "name": "amlcoin",
+    "productName": "Aml bitcoin",
+    "author": "aml bitcoin",
     "main": "src/electron-main.js",
     "version": "0.19.0",
-    "description": "skycoin wallet",
+    "description": "aml bitcoin wallet",
     "build": {
-        "appId": "org.skycoin.skycoin",
+        "appId": "org.aml.bitcoin",
         "nsis": {
             "oneClick": false,
             "allowToChangeInstallationDirectory": true
         },
         "mac": {
             "category": "public.app-category.productivity",
-            "extraFiles": [{
-                "from": ".gox_output/${os}_${arch}",
-                "to": "./Resources/app"
-            }]
+            "extraFiles": [
+                {
+                    "from": ".gox_output/${os}_${arch}",
+                    "to": "./Resources/app"
+                }
+            ]
         },
         "win": {
-            "extraFiles": [{
-                "from": ".gox_output/${os}_${arch}",
-                "to": "./resources/app"
-            }]
+            "extraFiles": [
+                {
+                    "from": ".gox_output/${os}_${arch}",
+                    "to": "./resources/app"
+                }
+            ]
         },
         "linux": {
-            "extraFiles": [{
-                "from": ".gox_output/${os}_${arch}",
-                "to": "./resources/app"
-            }]
-        }, 
-         "files": [
+            "extraFiles": [
+                {
+                    "from": ".gox_output/${os}_${arch}",
+                    "to": "./resources/app"
+                }
+            ]
+        },
+        "files": [
             "!**/*",
             "src/**/*"
         ],
-        "extraResources": [{
-            "from": "../src/gui/static/dist/",
-            "to": "./app/dist/",
-             "filter": [
-                "**/*",
-                "!current-skycoin.json"
-            ]
-        },
-          {
-            "from": "./skycoin/",
-            "to": "./app/dist/"
-        }],
+        "extraResources": [
+            {
+                "from": "../src/gui/static/dist/",
+                "to": "./app/dist/",
+                "filter": [
+                    "**/*",
+                    "!current-skycoin.json"
+                ]
+            },
+            {
+                "from": "./skycoin/",
+                "to": "./app/dist/"
+            }
+        ],
         "directories": {
             "output": "release"
         }
