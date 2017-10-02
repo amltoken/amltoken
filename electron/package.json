@@ -1,6 +1,6 @@
 {
-    "name": "amlcoin",
-    "productName": "Aml bitcoin",
+    "name": "amltoken",
+    "productName": "Amltoken",
     "author": "aml bitcoin",
     "main": "src/electron-main.js",
     "version": "0.19.0",
