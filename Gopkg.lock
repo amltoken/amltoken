@@ -26,16 +26,16 @@
   version = "v1.0.0"
 
 [[projects]]
-  name = "github.com/skycoin/skycoin"
-  packages = ["src/api/cli","src/api/webrpc","src/cipher","src/cipher/base58","src/cipher/chacha20","src/cipher/encoder","src/cipher/go-bip39","src/cipher/ripemd160","src/cipher/secp256k1-go","src/cipher/secp256k1-go/secp256k1-go2","src/coin","src/consensus","src/daemon","src/daemon/gnet","src/daemon/pex","src/gui","src/util/browser","src/util/cert","src/util/file","src/util/http","src/util/logging","src/util/utc","src/visor","src/visor/blockdb","src/visor/bucket","src/visor/historydb","src/wallet"]
-  revision = "ee33f18f2eed78515bce3b1c412d0e67b0570c24"
-  version = "0.19.1"
-
-[[projects]]
   branch = "master"
   name = "github.com/shopspring/decimal"
   packages = ["."]
   revision = "aed1bfe463fa3c9cc268d60dcc1491db613bff7e"
+
+[[projects]]
+  name = "github.com/skycoin/skycoin"
+  packages = ["src/api/cli","src/api/webrpc","src/cipher","src/cipher/base58","src/cipher/chacha20","src/cipher/encoder","src/cipher/go-bip39","src/cipher/ripemd160","src/cipher/secp256k1-go","src/cipher/secp256k1-go/secp256k1-go2","src/coin","src/consensus","src/daemon","src/daemon/gnet","src/daemon/pex","src/gui","src/testutil","src/util/browser","src/util/cert","src/util/droplet","src/util/file","src/util/http","src/util/logging","src/util/utc","src/visor","src/visor/blockdb","src/visor/bucket","src/visor/historydb","src/wallet"]
+  revision = "f725fbbeacf65c448fc6e639cc64c966cc61c878"
+  version = "v0.20.0-alpha.1"
 
 [[projects]]
   branch = "master"
@@ -82,6 +82,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "84c9589884b21a2909aa9ae6568c7f5f01bab4176fadf482520762a242b13842"
+  inputs-digest = "bc5c6d45294508fe07c3ce754c38472a1c762e8fe9bf43eb58634ae9a370bc0c"
   solver-name = "gps-cdcl"
   solver-version = 1
