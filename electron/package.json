@@ -3,7 +3,7 @@
     "productName": "Amltoken",
     "author": "amltoken",
     "main": "src/electron-main.js",
-    "version": "0.19.0",
+    "version": "0.20.0-dev",
     "description": "amltoken wallet",
     "build": {
         "appId": "org.aml.token",
@@ -29,14 +29,12 @@
             ]
         },
         "linux": {
-            "extraFiles": [
-                {
-                    "from": ".gox_output/${os}_${arch}",
-                    "to": "./resources/app"
-                }
-            ]
+            "extraFiles": [{
+                "from": ".gox_output/${os}_${arch}",
+                "to": "./resources/app"
+            }]
         },
-        "files": [
+         "files": [
             "!**/*",
             "src/**/*"
         ],
