@@ -13,39 +13,47 @@
         },
         "mac": {
             "category": "public.app-category.productivity",
-            "extraFiles": [{
-                "from": ".gox_output/${os}_${arch}",
-                "to": "./Resources/app"
-            }]
+            "extraFiles": [
+                {
+                    "from": ".gox_output/${os}_${arch}",
+                    "to": "./Resources/app"
+                }
+            ]
         },
         "win": {
-            "extraFiles": [{
-                "from": ".gox_output/${os}_${arch}",
-                "to": "./resources/app"
-            }]
+            "extraFiles": [
+                {
+                    "from": ".gox_output/${os}_${arch}",
+                    "to": "./resources/app"
+                }
+            ]
         },
         "linux": {
-            "extraFiles": [{
-                "from": ".gox_output/${os}_${arch}",
-                "to": "./resources/app"
-            }]
+            "extraFiles": [
+                {
+                    "from": ".gox_output/${os}_${arch}",
+                    "to": "./resources/app"
+                }
+            ]
         },
-         "files": [
+        "files": [
             "!**/*",
             "src/**/*"
         ],
-        "extraResources": [{
-            "from": "../src/gui/static/dist/",
-            "to": "./app/dist/",
-             "filter": [
-                "**/*",
-                "!current-skycoin.json"
-            ]
-        },
-          {
-            "from": "./skycoin/",
-            "to": "./app/dist/"
-        }],
+        "extraResources": [
+            {
+                "from": "../src/gui/static/dist/",
+                "to": "./app/dist/",
+                "filter": [
+                    "**/*",
+                    "!current-skycoin.json"
+                ]
+            },
+            {
+                "from": "./skycoin/",
+                "to": "./app/dist/"
+            }
+        ],
         "directories": {
             "output": "release"
         }

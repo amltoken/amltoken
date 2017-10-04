@@ -29,7 +29,7 @@ var (
 )
 
 func init() {
-	max, err := decimal.NewFromString(fmt.Sprint(math.MaxInt64))
+	max, err := decimal.NewFromString(fmt.Sprint(int64(math.MaxInt64)))
 	if err != nil {
 		panic(err)
 	}
